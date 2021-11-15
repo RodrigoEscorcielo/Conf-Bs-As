@@ -1,0 +1,87 @@
+#verde {
+    color: greenyellow;
+}
+
+#carta1 {
+    border-color: blue;
+    border-width: medium;
+}
+
+#carta2 {
+    border-color: cornflowerblue;
+    border-width: medium;
+ }
+
+#carta3 {
+    border-color:orange;
+    border-width: medium;
+}
+
+.card-title {
+     text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.descuento { 
+    font-size: x-large;
+    text-align: center;
+}
+
+.documentación {
+    color: grey;
+    font-size: x-large;
+    text-align: center;
+}
+
+#venta {
+    font-size: x-large;
+    text-align: center;
+}
+
+#valor {
+    text-align: center;
+    font-size: 50px;
+}
+
+#Pagar {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #C7E8FD;
+    border: none;
+  }
+
+  .footer {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 68, 255) 100%);
+    width: 100%;
+    padding: 60px;
+    margin-top: 20px;
+  }
+  
+  .container_footer {
+    justify-content: space-around;
+    display: flex;
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+
+
+  input[type=button], input[type=submit], input[type=reset] 
+  {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    text-decoration: none;
+     cursor: pointer;
+  }

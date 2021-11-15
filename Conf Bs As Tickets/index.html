@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="estilo.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+  <title>Conf Bs As</title>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+    <img src="codoacodo.png" alt="Logo" style="width: 100px;" class="rounded-pill">Conf Bs As</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   <form class="form-inline my-2 my-sm-0">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+           <a class="nav-link active" href="#">La conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Los oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Conviértete en orador</a>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" id="verde">Comprar tickets</a>
+          </li>
+        </ul>
+      </div>  
+  </form>   
+  </div>
+</nav>
+<br>
+
+
+<!-- Container -->
+<div class="container mb-4">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" id="carta1">
+        <div class="card-body">
+          <div class="mb-2"></div>
+          <h2 class="card-title">Estudiante</h2>
+          <br>
+          <p class="descuento">Tiene un descuento</p>
+          <br>
+          <h3 class="card-text">80%</h3>
+          <br>
+          <p class="documentación">* presentar documentación</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" id="carta2">
+        <div class="card-body">
+          <div class="mb-2"></div>
+          <h2 class="card-title">Trainee</h2>
+          <br>
+          <p class="descuento">Tiene un descuento</p>
+          <br>
+          <h3 class="card-text">50%</h3>
+          <br>
+          <p class="documentación">* presentar documentación</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" id="carta3">
+        <div class="card-body">
+          <div class="mb-2">
+          </div>
+          <h2 class="card-title">Junior</h2>
+          <br>
+          <p class="descuento">Tiene un descuento</p>
+          <br>
+          <h3 class="card-text">15%</h3>
+          <br>
+          <p class="documentación">* presentar documentación</p>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Titulos -->
+
+<div class="text" id="venta">
+  <p>VENTA<p>
+</div>
+<div class="text" id="valor">
+  <p>VALOR DE TICKET $200</p>
+</div>
+
+<!-- Form -->
+
+<form class="container">
+  <div class="row">
+     <div class="col-sm-6 mb-3">
+  <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+    </div>
+  <div class="col-sm-6 mb-3">
+   <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
+ </div>
+ <div class="col-lg-12">
+   <input type="text" class="form-control" id="Correo" placeholder="Correo">
+ </div>
+ <br>
+ <br>
+<div class="col-sm-6 mb-3">Cantidad
+<br>
+  <input type="number" class="form-control" id="Cantidad" placeholder="Cantidad">
+</div>
+<div class="col-sm-6 mb-3">Categoria
+  <div class="form-group">
+    <select class="form-control" id="celdas">
+      <option>Estudiante</option>
+      <option>Trainee</option>
+      <option>Junior</option>
+    </select>
+  </div>
+</div>
+  <div class="col-lg-12">
+  <input type="text" id="Pagar" name="fname" value="Total a Pagar: $">
+  </div>
+
+  <!-- Botones -->
+
+  <div class="col-sm-6 mb-3">
+   <input type="button" value="Borrar" onclick="cleanFields();">
+  </div>
+  <div class="col-sm-6 mb-3">
+   <input type="button" value="Resumen" onclick="calculatePrice();">
+  </div> 
+  </div>
+</form>
+
+
+<!--Footer-->
+<footer class="footer">
+  <div class="container_footer">
+    <a class="link" href="#">Preguntas<br>frecuentes</a>
+    <a class="link" href="#">Contáctanos</a>
+    <a class="link" href="#">Prensa</a>
+    <a class="link" href="#">Conferencias</a>
+    <a class="link" href="#">Términos y condiciones</a>
+    <a class="link" href="#">Privacidad</a>
+    <a class="link" href="#">Estudiantes</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
